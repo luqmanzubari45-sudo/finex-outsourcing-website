@@ -1,0 +1,47 @@
+/* Refined seven-step process */
+.hw-process{background:#fff}
+.hw-process>.wrap{display:grid;grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr);column-gap:72px;align-items:start}
+.hw-process>.wrap>.hw-section-heading{display:block;margin:0;padding-top:8px}
+.hw-process>.wrap>.hw-section-heading>p{max-width:390px;margin-top:28px}
+.hw-process-support{margin-top:50px;padding-top:25px;border-top:1px solid #d7e2ef;max-width:390px}
+.hw-process-support strong{display:block;color:#19385f;font:700 1rem/1.45 Manrope,sans-serif}
+.hw-process-support p{margin:10px 0 17px;color:#607493;font-size:.87rem;line-height:1.6}
+.hw-process-support a{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;max-width:360px;padding:16px 20px;border-radius:9px;background:#3678e8;color:#fff;font-size:.9rem;font-weight:800;box-shadow:0 10px 22px rgba(43,104,211,.2);transition:transform .2s,background .2s,box-shadow .2s}
+.hw-process-support a:hover{background:#2865d2;transform:translateY(-2px);box-shadow:0 14px 26px rgba(43,104,211,.28)}
+@media(min-width:1101px){
+  .hw-process>.wrap{align-items:stretch}
+  .hw-process>.wrap>.hw-section-heading{display:flex;flex-direction:column;height:100%}
+  .hw-process>.wrap>.hw-section-heading .hw-process-support{margin-top:auto}
+}
+.hw-process-overview{position:relative;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin:50px 0 64px}
+.hw-process>.wrap>.hw-process-overview{grid-column:2;grid-row:1;margin:0;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hw-process-overview:before{content:"";position:absolute;z-index:0;left:7%;right:7%;top:28px;border-top:1px dashed #aac4e9}
+.hw-process-overview li{position:relative;z-index:1;border:1px solid #d7e3f2;border-top:3px solid #3d7be5;border-radius:12px;background:#f7faff;min-height:120px;padding:16px 14px 13px;transition:transform .2s,box-shadow .2s,background .2s}
+.hw-process-overview li:hover{transform:translateY(-4px);background:#fff;box-shadow:0 12px 28px rgba(24,75,139,.1)}
+.hw-process-overview a{padding:0;color:#203f67;font-size:.78rem;line-height:1.45}
+.hw-process-overview span{display:grid;place-items:center;width:26px;height:26px;margin-bottom:15px;border-radius:50%;background:#2d70dc;color:#fff;font-size:.65rem}
+.hw-process-layout{grid-template-columns:.7fr 1.3fr;gap:58px;align-items:start}
+.hw-process>.wrap>.hw-process-layout{grid-column:1/-1;margin-top:78px}
+.hw-process-layout aside{padding:32px;border-radius:18px;background:linear-gradient(150deg,#102b52,#1f4d8b);color:#fff;box-shadow:0 18px 40px rgba(16,53,98,.14)}
+.hw-process-layout aside .hw-kicker{color:#9fc7ff}
+.hw-process-layout aside h3{margin:16px 0 18px;color:#fff;font-size:1.8rem;line-height:1.2}
+.hw-process-layout aside p{color:#c4d5eb;font-size:.9rem;line-height:1.65}
+.hw-process-layout aside .hw-text-link{display:inline-flex;margin-top:13px;color:#fff}
+.hw-steps{overflow:hidden;border:1px solid #d7e2ef;border-radius:16px;background:#fff}
+.hw-steps details{padding:0 22px;border-bottom:1px solid #d7e2ef}
+.hw-steps details:last-child{border-bottom:0}
+.hw-steps summary{padding:21px 0}
+.hw-steps summary strong{font-size:1rem}
+.hw-step-body{padding:0 25px 23px 43px}
+@media(max-width:1100px){.hw-process>.wrap{grid-template-columns:1fr;gap:0}.hw-process>.wrap>.hw-section-heading{grid-column:1}.hw-process>.wrap>.hw-section-heading>p{max-width:520px}.hw-process>.wrap>.hw-process-overview{grid-column:1;grid-row:auto;margin:38px 0 55px;grid-template-columns:repeat(4,1fr)}.hw-process>.wrap>.hw-process-layout{grid-column:1;margin-top:58px}.hw-process-overview:before{display:none}}
+@media(max-width:760px){
+  .hw-process>.wrap>.hw-process-overview{grid-template-columns:1fr;gap:10px;margin:30px 0 38px}
+  .hw-process>.wrap>.hw-process-layout{margin-top:34px}
+  .hw-process-support{margin-top:32px;max-width:none}
+  .hw-process-overview li{min-height:auto;padding:15px 16px}
+  .hw-process-overview a{display:flex;align-items:center;gap:12px}
+  .hw-process-overview span{flex:none;margin:0}
+  .hw-process-layout{gap:26px}
+  .hw-process-layout aside{padding:26px}
+  .hw-steps details{padding:0 16px}
+}

@@ -1,0 +1,45 @@
+/* Refined trial section */
+.hw-trial{
+  padding:112px 0;
+  background:linear-gradient(135deg,#f4f7fc 0%,#eef4fb 100%);
+}
+.hw-trial-layout{
+  grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);
+  gap:76px;
+  align-items:stretch;
+}
+.hw-trial-ticket{
+  min-height:490px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:42px;
+  border-radius:26px;
+  background:linear-gradient(150deg,#102b52 0%,#1c4784 100%);
+  box-shadow:0 24px 55px rgba(22,61,111,.18);
+}
+.hw-trial-ticket:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 95% 8%,rgba(111,170,255,.34),transparent 38%);pointer-events:none}
+.hw-trial-number{position:relative;display:flex;align-items:flex-end;gap:16px;margin:34px 0 25px;font-size:clamp(7rem,12vw,10.5rem);line-height:.8;letter-spacing:-.1em}
+.hw-trial-number span{padding-bottom:10px;margin:0;font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
+.hw-trial-ticket h3{position:relative;margin:0;font-size:1.55rem;line-height:1.35}
+.hw-trial-ticket p{position:relative;margin:24px 0 0;padding-top:20px;line-height:1.7}
+.hw-trial-ticket .btn{position:relative;align-self:flex-start;margin-top:30px;padding:15px 22px}
+.hw-trial-copy{padding:18px 0 10px}
+.hw-trial-copy h2{margin:16px 0 24px;font-size:clamp(2.6rem,4.6vw,4.25rem);line-height:1.03;letter-spacing:-.06em}
+.hw-trial-copy>p{max-width:710px;color:#5d7190;font-size:1.05rem;line-height:1.7}
+.hw-assessment{gap:0 30px;margin:34px 0 28px}
+.hw-assessment article{gap:15px;padding:20px 0;border-top:1px solid #ccd9e8}
+.hw-assessment article>span{font-size:.72rem;letter-spacing:.08em}
+.hw-assessment h3{margin:0 0 7px;font-size:1.08rem}
+.hw-assessment p{color:#637795;font-size:.87rem;line-height:1.55}
+.hw-fineprint{border-left:2px solid #4381eb;padding:4px 0 4px 20px;color:#607493!important;font-size:.9rem!important;line-height:1.65!important}
+@media(max-width:900px){.hw-trial-layout{gap:44px}.hw-trial-ticket{min-height:430px}}
+@media(max-width:760px){
+  .hw-trial{padding:72px 0 80px}
+  .hw-trial-layout{grid-template-columns:1fr;gap:34px}
+  .hw-trial-ticket{min-height:420px;padding:30px;border-radius:20px}
+  .hw-trial-number{margin:28px 0 22px;font-size:8rem}
+  .hw-trial-copy{padding:0}
+  .hw-trial-copy h2{font-size:clamp(2.45rem,11vw,3.5rem)}
+  .hw-assessment{grid-template-columns:1fr;margin-top:26px}
+}

@@ -1,0 +1,25 @@
+# Local tooling and dependencies
+.openai/
+.vercel/
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Local browser captures
+*.png
+!dist/assets/*.png
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Accidental local shell artifacts
+({name
+h
+innerWidth]
+x.textContent).join('

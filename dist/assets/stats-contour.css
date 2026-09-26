@@ -1,0 +1,10 @@
+/* Homepage number contour */
+.proof-stats strong{
+  -webkit-text-stroke:1px rgba(157,197,255,.82);
+  paint-order:stroke fill;
+  text-shadow:0 0 14px rgba(51,133,255,.25);
+}
+
+@media (max-width:760px){
+  .proof-stats strong{-webkit-text-stroke:.75px rgba(157,197,255,.82)}
+}
